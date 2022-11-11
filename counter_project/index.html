@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter_Project</title>
+    <style>
+.btn {
+  margin: 1em;
+  border-radius: 18px;
+  padding: 1em;
+  font-size: 1em;
+  background: aqua;
+  color: red;
+  cursor: pointer;
+}
+      #Text{
+        font-size: 5em;
+        text-align: center;
+      }
+      .combined {
+         text-align: center;
+         margin: 8em;
+       }
+    </style>
+</head>
+<body>
+    <div class="combined">
+    <p id="Text">0</p>
+    <button class="btn" id="Increase" onclick="Increase()">Increase</button>
+    <button class="btn" id="Reset" onclick="Reset()">Reset</button>
+    <button class="btn" id="Decrease" onclick="Decrease()">Decrease</button>
+</div>
+   <script>
+    function Increase() {
+        count+= 1
+        document.getElementById('Text').innerHTML = count;
+    }
+    function Reset() {
+        count = 0;
+        document.getElementById('Text').innerHTML = count;
+    }
+    function Decrease() {
+        count-= 1
+        document.getElementById('Text').innerHTML = count;
+    }
+
+    </script>
+</body>
+</html>
